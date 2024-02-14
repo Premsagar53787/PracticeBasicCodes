@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>My First JavaScript</h2>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.
+    </button>
+    <p id="demo"></p>
+
+    <script>
+        let x = 89;
+        let y = 99;
+        let z = x + y;
+        document.getElementById("demo").innerHTML = x + "<br> sum of 2 numbers" + y;
+        document.getElementById("demo").innerHTML = z;
+        function reverseString(str) {
+            const strRev = str.split('').reverse().join('');
+            console.log(strRev);
+        }
+        document.getElementById("demo").innerHTML = reverseString("GeeksforGeeks");
+        reverseString("JavaScript");
+        reverseString("TypeScript");
+    </script>
+</body>
+
+</html>
